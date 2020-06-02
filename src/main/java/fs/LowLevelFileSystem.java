@@ -24,12 +24,12 @@ public interface LowLevelFileSystem {
    * Cierra un archivo.
    * 
    * @param fd
-   *          el descriptor del archivo
+   * @return  el descriptor del archivo
    */
   void closeFile(int fd);
 
   /**
-   * Lee tantos bytes como pueda, esto es, bufferStart - bufferEnd + 1 bytes
+   * Lee tantos bytes como pueda, esto es, bufferEnd  - bufferStart + 1 bytes
    * devuelve la cantidad efectiva de bytes leidos y modifica al buffer de forma
    * acorde
    * 
